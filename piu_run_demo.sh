@@ -29,14 +29,14 @@ NAME=${Method}_${Tradeoff}_${DATASET}_${LOSS}_${NET}_${LR}_${EPOCH}epochs_task${
 # checkpoints/${DATASET}_seed${SEED}/${NAME} >./results/${DATASET}/${NAME}_old_mean.txt 
 
 
-for SIGMA_TEST in 0.20 #0.30 
-do
+# for SIGMA_TEST in 0.20 #0.30 
+# do
 
-python test.py -seed ${SEED} -base ${BASE} -task ${TASK} -epochs ${EPOCH} -data ${DATASET} -gpu ${GPU} -method ${Method} -r  \
-checkpoints/${DATASET}_seed${SEED}/${NAME} -mapping_test -sigma_test ${SIGMA_TEST} \
->./results/${DATASET}/${NAME}_SDC_sigma_test${SIGMA_TEST}.txt 
+# python test.py -seed ${SEED} -base ${BASE} -task ${TASK} -epochs ${EPOCH} -data ${DATASET} -gpu ${GPU} -method ${Method} -r  \
+# checkpoints/${DATASET}_seed${SEED}/${NAME} -mapping_test -sigma_test ${SIGMA_TEST} \
+# >./results/${DATASET}/${NAME}_SDC_sigma_test${SIGMA_TEST}.txt 
 
-done
+# done
 
 done
 done
