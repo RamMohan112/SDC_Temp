@@ -11,7 +11,7 @@ TASK=11 #6
 BASE=50 #17
 SEED=1
 
-for Method in Finetuning #LwF EWC MAS
+for Method in Finetuning LwF EWC MAS
 do
 for Tradeoff in 0 # 1 1e7 1e6
 do
